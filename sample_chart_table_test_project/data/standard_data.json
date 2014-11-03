@@ -1,0 +1,338 @@
+{
+  "tables": [
+    {
+      "tableMetaData": {
+        "tableType": "hierarchical table",
+        "tableHeader": "Weekly data",
+        "bgcolor": "cyan",
+        "columnHeaders": [
+          "ROR YTD",
+          "ROR Month End",
+          "ROR Qtr End",
+          "ROR Last Yr",
+          "ROR Last 5 years"
+        ],
+        "chartType": "bar",
+        "barChartColor": "red"
+      },
+      "childRows": [
+        {
+          "rowHeader": "International Equities",
+          "rowValues": [
+            7.2,
+            3.3,
+            5.5,
+            4.9,
+            2.2
+          ],
+          "tooltips": [
+            "7.2, 5.5",
+            "",
+            "day 3 data",
+            "day 4 data",
+            "day 5 data"
+          ],
+          "cellColors": [
+            "AAA",
+            "BBB",
+            "CCC",
+            "DDD",
+            "EEE"
+          ],
+          "subRows": [
+            {
+              "rowHeader": "International Index",
+              "rowValues": [
+                7.3,
+                2.2,
+                5.5,
+                6.7,
+                9
+              ],
+              "tooltips": [
+                3.2,
+                3.7,
+                "II 4.3",
+                6.7,
+                "II Excess 2.2"
+              ]
+            }
+          ],
+          "childRows": [
+            {
+              "rowHeader": "Europe",
+              "rowValues": [
+                0.3,
+                1.2,
+                1.3,
+                1,
+                2.3
+              ],
+              "cellColors": [
+                "AAA",
+                "BBB",
+                "CCC",
+                "DDD",
+                "EEE"
+              ],
+              "tooltips": [
+                "Intl Eq Europe Yo",
+                "Intl Eq Europe 1.2",
+                "Intl Eq Europe 1.3",
+                "Intl Eq Europe 3",
+                "Intl Eq Europe 2.1"
+              ],
+              "subRows": [
+                {
+                  "rowHeader": "European Index",
+                  "rowValues": [
+                    3.1,
+                    2.2,
+                    1.3,
+                    1.4,
+                    1.1
+                  ],
+                  "tooltips": [
+                    3.2,
+                    "data 21",
+                    2.2,
+                    2.3,
+                    3.5
+                  ]
+                }
+              ],
+              "childRows": [
+                {
+                  "rowHeader": "London",
+                  "rowValues": [
+                    0.3,
+                    1.2,
+                    1.3,
+                    1,
+                    2.3
+                  ],
+                  "cellColors": [
+                    "AAA",
+                    "BBB",
+                    "CCC",
+                    "DDD",
+                    "EEE"
+                  ],
+                  "tooltips": [
+                    "Intl Eq London Yo",
+                    "Intl Eq London 1.2",
+                    "Intl Eq London 1.3",
+                    "Intl Eq London 3",
+                    "Intl Eq London 2.1"
+                  ],
+                  "subRows": [
+                    {
+                      "rowHeader": "London Index",
+                      "rowValues": [
+                        3.1,
+                        2.2,
+                        1.3,
+                        1.4,
+                        1.1
+                      ],
+                      "tooltips": [
+                        3.2,
+                        "data 21",
+                        2.2,
+                        2.3,
+                        3.5
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "rowHeader": "Asia",
+              "rowValues": [
+                50,
+                55,
+                60,
+                61,
+                62
+              ],
+              "cellColors": [
+                "333",
+                "213",
+                "CC3",
+                "D23",
+                "EEf"
+              ],
+              "tooltips": [],
+              "subRows": [],
+              "childRows": [
+                {
+                  "rowHeader": "India",
+                  "rowValues": [
+                    0.3,
+                    1.2,
+                    1.3,
+                    1,
+                    2.3
+                  ],
+                  "cellColors": [
+                    "AAA",
+                    "BBB",
+                    "CCC",
+                    "DDD",
+                    "EEE"
+                  ],
+                  "tooltips": [
+                    "Intl Eq India Yo",
+                    "Intl Eq India 1.2",
+                    "Intl Eq India 1.3",
+                    "Intl Eq India 3",
+                    "Intl Eq India 2.1"
+                  ],
+                  "subRows": [
+                    {
+                      "rowHeader": "India Index",
+                      "rowValues": [
+                        3.1,
+                        2.2,
+                        1.3,
+                        1.4,
+                        1.1
+                      ],
+                      "tooltips": [
+                        3.2,
+                        "data 21",
+                        2.2,
+                        2.3,
+                        3.5
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "rowHeader": "Domestic Equities",
+          "rowValues": [
+            2.3,
+            3.2,
+            4.3,
+            2.2,
+            3.4
+          ],
+          "tooltips": [
+            "Dom Equity 2.3",
+            "Dom Equity 2.3",
+            "Dom Equity 2.34",
+            "Dom Equity 2.3",
+            "Dom Equity 1.3"
+          ],
+          "cellColors": [
+            "AAA",
+            "BBB",
+            "CCC",
+            "DDD",
+            "EEE"
+          ],
+          "childRows": [
+            {
+              "rowHeader": "West Coast",
+              "rowValues": [
+                2.2,
+                1.1,
+                3.3,
+                4.4,
+                5.5
+              ],
+              "cellColors": [
+                "A0A",
+                "B1B",
+                "C2C",
+                "D3D",
+                "E4E"
+              ],
+              "tooltips": [
+                "WC 2.2",
+                2.3,
+                "WC Index 4.4",
+                3.3,
+                ""
+              ],
+              "subRows": [
+                {
+                  "rowHeader": "S&P500",
+                  "rowValues": [
+                    7.2,
+                    5.6,
+                    6.7,
+                    11.1,
+                    7.2
+                  ],
+                  "tooltips": [
+                    "Compared with S&P 500, trails by 2.2",
+                    1.2,
+                    2.3,
+                    4.5,
+                    5.2
+                  ]
+                }
+              ]
+            },
+            {
+              "rowHeader": "Midwest",
+              "rowValues": [
+                3.2,
+                4.5,
+                5.6,
+                6.7,
+                7.8
+              ],
+              "cellColors": [
+                "AA1",
+                "BB2",
+                "CC3",
+                "DD4",
+                "EE5"
+              ],
+              "tooltips": [
+                "7.7",
+                "4.2",
+                "5.3",
+                "6.7",
+                "More tooltips"
+              ],
+              "subRows": []
+            },
+            {
+              "rowHeader": "East Coast",
+              "rowValues": [
+                2.1,
+                3.2,
+                2,
+                6,
+                7.01
+              ],
+              "cellColors": [
+                "AA1",
+                "BB2",
+                "CC3",
+                "DD4",
+                "EE5"
+              ],
+              "tooltips": [
+                "7.7",
+                "4.2",
+                "5.3",
+                "6.7",
+                "More tooltips"
+              ],
+              "subRows": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

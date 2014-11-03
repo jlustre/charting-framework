@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+	    <title>NTRS IRAS Mobile Application</title>
+	    <meta name="viewport" content="width=device-width">
+	    <link rel="stylesheet" href="http://cdn.datatables.net/1.10.3/css/jquery.dataTables.min.css"/>
+	    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		<style>
+
+		    tr.lvl_1 td:first-child {
+		        padding-left: 20px;
+		    }
+		    tr.lvl_2 td:first-child {
+		        padding-left: 40px;
+		    }
+		    tr.lvl_3 td:first-child {
+		        padding-left: 60px;
+		    }
+		    tr span.subrow {
+		    	padding-left: 20px;
+		    }
+		    tr td span.indentSr {
+		    	margin-left: 20px;
+		    }
+
+		</style> 	
+	</head>
+	<body>
+		<h1>CanvasJS Adapter - Demo </h1>
+	    
+	    <div id="canvasContainer" style="width: 400px; height: 300px;"></div><br>
+	    <div id="tableContainer" width="100%"></div><br>
+		
+		<!-- //These JS Files are needed to run the chart -->
+		<script src="lib/jquery/jquery.min.js"></script>
+		<script src="scripts/table_chart_adapter.js"></script>
+
+	    <script type="text/javascript">
+
+	       /** 
+			* This function is used to receive the json file from the standard data
+			* @param  {string} url The url of the location of the json file
+			* @return {object}     This is the table object from the json file
+			*/
+			function getStandardData(url) {
+			var tbldata = {};
+			var done = false;
+
+			$.ajax({
+			   cache: false,
+			   url: url,
+			   type: "GET",
+			   dataType: "json",
+			   async: false,
+			   error: function (result) {
+			     tbldata= 'undefined';
+			     done = true;
+			    },
+			   success: function (result) {
+			        tbldata = result;
+			        done = true;
+			    }
+			 });
+
+			//A loop to check done if ajax call is done.
+			while (!done) {
+			  setTimeout(function(){ },300); // take a sleep.
+			}
+
+			return tbldata;
+			}
+
+			var standard_data = getStandardData('data/standard_data.json');	
+			
+			var canvasjs = new Chart('canvasjs_adapter', standard_data);     
+			var table = new Table('table_adapter', standard_data);     
+	        window.onload = canvasjs.renderChart('canvasContainer');
+	        window.onload = table.renderTable('tableContainer');
+	    </script>
+	</body>
+</html>
